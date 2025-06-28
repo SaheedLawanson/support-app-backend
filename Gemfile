@@ -73,3 +73,5 @@ gem "graphiql-rails", "~> 1.10"
 gem "faker", "~> 3.5"
 
 gem "jwt", "~> 3.1"
+
+gem "rack-cors", "~> 3.0"

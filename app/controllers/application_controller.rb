@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::API
     def current_user
         hmac_secret = Rails.application.credentials.jwt_secret
+        puts "request.headers: #{request.headers['Authorization']}"
         token = request.headers["Authorization"]&.split(" ")&.last
         return nil unless token
 

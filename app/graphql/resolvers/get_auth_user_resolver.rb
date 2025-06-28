@@ -4,8 +4,7 @@ module Resolvers
 
         def resolve()
             # Require authentication to access user details
-            authenticate_customer!
-            user = context[:current_user]
+            user = authenticate_user!
             user
         end
     end
