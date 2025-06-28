@@ -37,7 +37,17 @@ def create_users
     role: "AGENT"
   )
   puts "Created AGENT: #{agent.first_name} #{agent.last_name} (#{agent.email})"
-  [customer, agent]
+
+  agent2 = User.create!(
+    email: "saheedlawanson47+agent2@gmail.com",
+    first_name: "Agent",
+    last_name: "Two",
+    password_hash: BCrypt::Password.create("Password123!"),
+    role: "AGENT"
+  )
+  puts "Created AGENT2: #{agent2.first_name} #{agent2.last_name} (#{agent2.email})"
+  
+  [customer, agent, agent2]
 end
 
 # Seed function to create support requests
