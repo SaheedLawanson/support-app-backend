@@ -1,7 +1,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
     allow do
-      origins 'http://localhost:5173', 'https://support-request-frontend.vercel.app'  # Frontend URLs allowed
+      origins 'http://localhost:5173', 'https://support-app-frontend.onrender.com'  # Frontend URLs allowed
   
       resource '*',
         headers: :any,
