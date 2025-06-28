@@ -44,9 +44,10 @@ ActiveRecord::Schema[8.0].define(version: 2025_06_28_062513) do
     t.string "first_name"
     t.string "last_name"
     t.string "password_hash"
+    t.string "role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "role"
+    t.string "type"
   end
 
   add_foreign_key "comments", "support_requests"
