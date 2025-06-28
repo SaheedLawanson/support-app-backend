@@ -63,3 +63,13 @@ group :test do
 end
 
 gem "dotenv-rails", "~> 3.1", :groups => [:development, :test]
+
+gem "bcrypt", "~> 3.1"
+
+gem "graphql", "~> 2.5"
+
+gem "graphiql-rails", "~> 1.10"
+
+gem "faker", "~> 3.5"
+
+gem "jwt", "~> 3.1"
