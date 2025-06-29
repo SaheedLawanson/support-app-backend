@@ -83,8 +83,6 @@ Use these credentials to test the GraphQL authentication and role-based features
 ## Missing Features & Future Implementation
 
 ### Required Features Not Yet Implemented
-- **File Uploads**: Support for images and PDF attachments in support requests
 - **CSV Export**: Export functionality for closed tickets in the last month
 - **Email Reminders**: Daily email notifications for open tickets
-- **Frontend Application**: Web portal for customers and agents (Vue.js/Ember.js)
-- **Deployed Applications**: Live deployment links for backend and frontend
+- **Update Ticket Status**: Updating a ticket to closed or completed
