@@ -15,7 +15,7 @@ module Mutations
         raise GraphQL::ExecutionError, "Invalid email or password"
       end
 
-      hmac_secret = Rails.application.credentials.jwt_secret
+      hmac_secret = ENV["JWT_SECRET"]
       token = JWT.encode({ user_id: user.id, exp: 24.hours.from_now.to_i }, hmac_secret, "HS256")
 
       { token: token }
