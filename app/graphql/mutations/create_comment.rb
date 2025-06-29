@@ -31,7 +31,7 @@ module Mutations
           end
         end
 
-        if user.role == "AGENT" && support_request.agent_id.present?
+        if user.role == "AGENT" && support_request.agent_id.present? && support_request.agent_id != user.id
           raise GraphQL::ExecutionError, "This support request has been assigned"
         end
 
